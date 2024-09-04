@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- # Header -->
+    <div class="h-20 border-b-2 border-gray-200 flex flex-row justify-around items-center">
+        <a href="./index.html"><img class="h-16 aspect-auto" src="./media/logo.jpg" alt="logo" /></a>
+        <a href="./index.html">
+            <p class="font-libre">FriendshipOnWheels</p>
+        </a>
+        <div>
+            <a href="./signin.html"><button class="p-3 rounded-md border-2 border-black">Sign in</button></a>
+            <a href="./signup.html"><button class="p-3 rounded-md border-2 border-black bg-black text-white">Sign
+                    up</button></a>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="min-h-screen flex flex-col items-center mx-auto">
+
+        <div class="w-full">
+            <div class="max-w-screen-sm mx-auto mt-20 flex flex-col gap-5">
+                <div>
+                    <h3 class="text-3xl mb-2">Make a donation</h3>
+                    <p>FriendshipOnWheels relies on the generosity of donors like you to continue our vital work in supporting frail, aged
+                    individuals and people with disabilities across the nation. Your donation can make a significant difference in the lives
+                    of those who may be struggling to maintain their independence and connection to their communities. Every contribution,
+                    no matter how big or small, helps us extend a helping hand to those in need and build a stronger, more compassionate society together.</p>
+                    <br />
+                    <p>Your generosity enables us to recruit and train volunteers, purchase
+                    essential supplies, and expand our reach to serve more individuals in need. Together, we can make a positive impact on
+                    the lives of vulnerable members of our society and foster a culture of kindness and support. Please consider donating
+                    today to help us continue our mission of connecting the community through food and companionship.</p>
+                </div>
+
+                <h3 class="self-center">Select an amount</h3>
+                <!-- See script -->
+                <div class="flex flex-row gap-5 self-center">
+                    <button class="donation w-32 h-20 border-2 border-gray-200 rounded-md">$5</button>
+                    <button class="donation w-32 h-20 border-2 border-gray-200 rounded-md">$10</button>
+                </div>
+                <div class="flex flex-row gap-5 self-center">
+                    <button class="donation w-32 h-20 border-2 border-gray-200 rounded-md">$20</button>
+                    <button class="donation w-32 h-20 border-2 border-gray-200 rounded-md">$50</button>
+                </div>
+                <a class="self-center w-[50%]" href="./donation_1.5.html"><button class="rounded-md border-gray-200 border-[2px] shadow-sm w-full py-3 text-center mt-6">Make a donation</button></a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- # Footer -->
+    <div class="h-36 flex flex-row justify-around mb-32 mt-20">
+        <!-- <div class="w-[50%]">FriendshipOnWheels</div> -->
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">Requestors</h3>
+            <a href="./requestor/signup_requestor.html">Request a meal</a>
+            <a href="./requestor/signin_requestor.html">Sign in</a>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">Volunteers</h3>
+            <a href="./volunteer/signup_volunteer.html">Become a volunteer</a>
+            <a href="./volunteer/signin_volunteer.html">Sign in</a>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">MealsOnWheels</h3>
+            <a href="./help.html">Help</a>
+            <a href="./contact_us.html">Contact</a>
+            <a href="./privacy_policy.html">Privacy policy</a>
+            <a href="./FAQ.html">FAQ</a>
+        </div>
+    </div>
+</body>
+
+<script>
+    let button_list = document.querySelectorAll(".donation");
+    button_list.forEach(element => {
+        element.addEventListener("click", function () {
+            button_list.forEach(remove_background => {
+                remove_background.classList.remove("bg-yellow-100");
+            });
+            this.classList.add("bg-yellow-100");
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- # Header -->
+    <div class="h-20 border-b-2 border-gray-200 flex flex-row justify-around items-center">
+        <a href="./index.html"><img class="h-16 aspect-auto" src="./media/logo.jpg" alt="logo" /></a>
+        <a href="./index.html">
+            <p class="font-libre">FriendshipOnWheels</p>
+        </a>
+        <div>
+            <a href="./signin.html"><button class="p-3 rounded-md border-2 border-black">Sign in</button></a>
+            <a href="./signup.html"><button class="p-3 rounded-md border-2 border-black bg-black text-white">Sign
+                    up</button></a>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="min-h-screen flex flex-col items-center mx-auto">
+
+        <div class="w-full">
+            <div class="max-w-screen-sm mx-auto mt-20 flex flex-col gap-5">
+                <div>
+                    <h3 class="text-3xl mb-2">Helpdesk and FAQ</h3>
+                    <p>Welcome to the FriendshipOnWheels FAQ page, your go-to resource for answers to common questions about our services. Whether
+                    you're curious about signing up, meal options, or delivery schedules, find all the information you need right here to
+                    support your journey towards nutritious and convenient meal solutions.</p>
+                </div>
+
+
+                <details class="p-3 border-2 border-gray-200 rounded-md">
+                    <summary class="text-lg">How do I sign up to receive FriendshipOnWheels services?</summary>
+                    <div class="mt-4">
+                        <p class="ml-7">Signing up for FriendshipOnWheels is easy! Simply visit our website and choose to sign up as either a volunteer or a requestor.
+                            For requestors, the process involves submitting information such as your dietary preferences so you can lodge meal requests with ease.
+                            For volunteers, this usually involves submitting your location and availability to volunteer.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="p-3 border-2 border-gray-200 rounded-md">
+                    <summary class="text-lg">What types of meals are offered by FriendshipOnWheels?</summary>
+                    <div class="mt-4">
+                        <p class="ml-7">FriendshipOnWheels offers a variety of nutritious and delicious meals tailored to meet the dietary needs of seniors and
+                        individuals with disabilities. Our menu includes options for different dietary restrictions such as diabetic-friendly,
+                        heart-healthy, vegetarian, and more. Each meal typically consists of a protein, vegetable, starch, and fruit or dessert.</p>
+                    </div>
+                </details>
+
+                <details class="p-3 border-2 border-gray-200 rounded-md">
+                    <summary class="text-lg">How often are meals delivered by FriendshipOnWheels?</summary>
+                    <div class="mt-4">
+                        <p class="ml-7">FriendshipOnWheels delivery schedules vary depending on the location and program. In general, most programs deliver meals
+                        Monday through Friday, with some offering weekend or holiday meal options as well. Delivery times also vary, but meals
+                        are typically delivered during the late morning or early afternoon. Be sure to check with your local FriendshipOnWheels
+                        program for specific delivery details.</p>
+                    </div>
+                </details>
+
+                <p>Do you still have questions? Feel free to <a class="text-blue-700" href="./contact_us.html">contact us</a> if we can help with anything else.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- # Footer -->
+    <div class="h-36 flex flex-row justify-around mb-32 mt-20">
+        <!-- <div class="w-[50%]">FriendshipOnWheels</div> -->
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">Requestors</h3>
+            <a href="./requestor/signup_requestor.html">Request a meal</a>
+            <a href="./requestor/signin_requestor.html">Sign in</a>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">Volunteers</h3>
+            <a href="./volunteer/signup_volunteer.html">Become a volunteer</a>
+            <a href="./volunteer/signin_volunteer.html">Sign in</a>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">MealsOnWheels</h3>
+            <a href="./help.html">Help</a>
+            <a href="./contact_us.html">Contact</a>
+            <a href="./privacy_policy.html">Privacy policy</a>
+            <a href="./FAQ.html">FAQ</a>
+        </div>
+    </div>
+</body>
+
+</html>

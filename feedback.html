@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- # Header -->
+    <div class="h-20 border-b-2 border-gray-200 flex flex-row justify-around items-center">
+        <a href="./index.html"><img class="h-16 aspect-auto" src="./media/logo.jpg" alt="logo" /></a>
+        <a href="./index.html">
+            <p class="font-libre">FriendshipOnWheels</p>
+        </a>
+        <div>
+            <a href="./signin.html"><button class="p-3 rounded-md border-2 border-black">Sign in</button></a>
+            <a href="./signup.html"><button class="p-3 rounded-md border-2 border-black bg-black text-white">Sign up</button></a>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="min-h-screen flex flex-col items-center mx-auto">
+
+        <div class="w-full">
+            <div class="max-w-screen-lg mx-auto mt-20 flex flex-col gap-5">
+                <div>
+                    <h3 class="text-3xl mb-2">Feedback</h3>
+                    <p>We'd love to hear your thoughts. Let us know what suggestions you have and we'll get back to you as soon as we can.</p>
+                </div>
+
+                <div class="flex flex-row gap-5 w-full mt-3">
+                    <div class="w-full">
+                        <p>First Name</p>
+                        <input class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full" />
+                    </div>
+                    <div class="w-full">
+                        <p>Last Name</p>
+                        <input class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full" />
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-5 mt-3">
+                    <div class="w-[60%]">
+                        <p>Email Address</p>
+                        <input class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full" />
+                    </div>
+                    <div class="w-[40%]">
+                        <p>Phone Number (optional)</p>
+                        <input class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full" />
+                    </div>
+                </div>
+
+                <div class="pt-5">
+                    <p>Description</p>
+                    <textarea class="bg-transparent border-2 border-gray-200 rounded-md p-2 w-full min-h-32"
+                        placeholder="e.g. I am unable to find the volunteers page"></textarea>
+                </div>
+
+                <button class="rounded-md border-gray-200 border-[2px] shadow-sm w-[60%] py-3 self-center text-center mt-6">Submit</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- # Footer -->
+    <div class="h-36 flex flex-row justify-around mb-32 mt-20">
+        <!-- <div class="w-[50%]">FriendshipOnWheels</div> -->
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">Requestors</h3>
+            <a href="./requestor/signup_requestor.html">Request a meal</a>
+            <a href="./requestor/signin_requestor.html">Sign in</a>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">Volunteers</h3>
+            <a href="./volunteer/signup_volunteer.html">Become a volunteer</a>
+            <a href="./volunteer/signin_volunteer.html">Sign in</a>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h3 class="font-semibold">MealsOnWheels</h3>
+            <a href="./help.html">Help</a>
+            <a href="./contact_us.html">Contact</a>
+            <a href="./privacy_policy.html">Privacy policy</a>
+            <a href="./FAQ.html">FAQ</a>
+        </div>
+    </div>
+</body>
+
+</html>
